@@ -1,0 +1,19 @@
+body{
+    margin:0;
+   
+}
+
+h1, a{
+    font-family: 'Domine', serif ;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif ;
+}
+
+.header{
+    color:black;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 40px;
+}
+
