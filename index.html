@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Domine&family=Open+Sans:wght@400;500&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/tailwind.min.css"  media="screen,projection"/>
     <title> Formulario</title>
 </head>
 <body>
     <header>
-        <section class="">
-          <nav id="menu" class="navbar especialidades__navbar navbar-expand-lg  bg-light scrolling-navbar fixed-top ">
+     <!--    <section class="">
+          <nav id="menu" class="navbar especialidades__navbar navbar-expand-lg  bg-light scrolling-navbar fixed-top navbar__estilo ">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html"><img id="logo" class="logo header__logo"
                   src='../Imagenes/logonavbar-removebg-preview.png' alt=""></a>
@@ -31,12 +32,12 @@
                   <li class="nav-item">
                     <a class="nav-link  estilo__scrollP estilo" href="../vistas/publicaciones.html"><span
                         class="iconify estilo__icono estilo__iconoP" data-icon="bx:news" style="color: black;"></span>
-                      Publicaciones</a>
+                      Productos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link estilo__scrollE active__letra estilo" href="../vistas/especialidades.html"><span
                         class="iconify estilo__icono estilo__iconoE" data-icon="bx:book-bookmark"
-                        style="color: black;"></span> Especialidades</a>
+                        style="color: black;"></span> Nosotros</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link estilo__scrollC estilo" href="../vistas/contactanos.html"><span
@@ -48,18 +49,46 @@
             </div>
           </nav>
     
-        </section>
-    
+        </section> -->
+  
       </header>
     <main>
         <section>
-            <h1>EVALUAMOS TU CASO</h1>
-            <form action="">
+          <form id="enviar-mail">
+            <fieldset>Contactanos</fieldset>
+            <div class="mb-3 campo">
+              <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+              <input id ="nombre"type="name" class="form-control input" id="exampleFormControlInput1" placeholder="Ingrese su nombre">
+            </div>
+          <div class="mb-3 campo">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input id="email" type="email" class="form-control input" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3 campo">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea id="mensaje" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          </div>
 
-            </form>
+          <div  id="spinner">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+            </div>
+        </div>
+         
+          <div class="botones">
+          <button id="enviar" class="btn btn-primary boton " type="submit" value="Submit">Enviar</button>
+          <input id="reset" class="btn btn-primary boton reset" type="reset" value="Reset">
+        </div>
+        </form>
         </section>
     </main>
     
+    <script src="./app.js"></script>
 
  <script src="./bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
 </body>
